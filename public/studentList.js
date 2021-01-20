@@ -16,12 +16,6 @@ const deleteStudentById = async (id) => {
 
 }
 
-/*//Изменение студента с id
-const updateStudentById = async (id) => {
-    return fetch(`${HOST}/guide/${id}`,{method: 'PUT',})
-        .then((response) => response.json())
-        .catch(() => []);
-}*/
 
 const updateStudentById = async (id,firstName,lastName) => {
     return fetch(`${HOST}/guide/${id}`, {
